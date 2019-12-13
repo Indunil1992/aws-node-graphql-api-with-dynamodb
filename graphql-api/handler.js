@@ -37,7 +37,7 @@ const getGreeting = firstName => promisify(callback =>
 
 const changeNickname = (firstName, nickname) => promisify(callback =>
   dynamoDb.update({
-    TableName: 'graphql-api-dev',
+    TableName: 'graphql-api-dev1',
     Key: {
       'firstName': firstName
     },
